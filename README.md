@@ -7,7 +7,7 @@ The OPC DA/AE/HDA  Solution .NET API defines classes which can be used to implem
 
 ## Online Help
 
-We provide an online help for the current version: [OPC UA Solution NET Online Help](https://technosoftware.com/help/OPCDaAeHdaSolutionNet/12/)
+We provide an online help for the current version: [OPC DA/AE/HDA Solution NET Online Help](https://technosoftware.com/help/OPCDaAeHdaSolutionNet/12/)
 
 ## Getting started
 
