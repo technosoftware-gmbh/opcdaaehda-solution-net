@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Server xmlns="http://schemas.opcfoundation.org/OPCSample/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SelfRegInfo xmlns="http://schemas.opcfoundation.org/OPC/"><VendorName>OPCSample</VendorName><ApplicationName>OpcHdaServer</ApplicationName><ApplicationDescription>OPC Historical Data Access 1.20 Sample Server</ApplicationDescription><AppID>{778F4D15-8401-43D8-A88D-FBFD083538B3}</AppID><ClassName>OpcHdaServer</ClassName><ClassDescription>OPC Historical Data Access 1.20 Sample Server</ClassDescription><ClassVersion>1</ClassVersion><CLSID>{6A5EEDEC-1509-4627-997F-993CCB65AB7C}</CLSID></SelfRegInfo><BrowseElement ElementName="Sample Data">
+		<Children>
+			<BrowseElement ElementName="Raw Data 1">
+				<Item>
+					<Attribute Name="Data Type" xsi:type="xsd:double">1.00</Attribute>
+					<Attribute Name="Description" xsi:type="xsd:string">The sample dataset defined in Section 2.8 of the specification.</Attribute>
+					<Attribute Name="Eng Units" xsi:type="xsd:string">Units</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">true</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Derive Equation" xsi:type="xsd:string">None</Attribute>
+					<Attribute Name="Node Name" xsi:type="xsd:string">Localhost</Attribute>
+					<Attribute Name="Process Name" xsi:type="xsd:string">Internal</Attribute>
+					<Attribute Name="Source Name" xsi:type="xsd:string">Raw Data 1.csv</Attribute>
+					<Attribute Name="Source Type" xsi:type="xsd:string">File</Attribute>
+					<Attribute Name="Normal Maximum" xsi:type="xsd:double">1000</Attribute>
+					<Attribute Name="Normal Minimum" xsi:type="xsd:double">0</Attribute>
+					<Attribute Name="ItemID" xsi:type="xsd:string">Raw Data 1</Attribute>
+					<Attribute Name="Max Time Interval" xsi:type="xsd:long">10000000</Attribute>
+					<Attribute Name="Min Time Interval" xsi:type="xsd:long">10000000</Attribute>
+					<Attribute Name="Exception Deviation" xsi:type="xsd:double">0</Attribute>
+					<Attribute Name="Exception Dev Type" xsi:type="xsd:short">0</Attribute>
+					<Attribute Name="High Entry Limit" xsi:type="xsd:double">+1.7976931348623158e+308</Attribute>
+					<Attribute Name="Low Entry Limit" xsi:type="xsd:double">-1.7976931348623158e+308</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+			<BrowseElement ElementName="Aggregate Data 1">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">The sample dataset defined in Section 2.9.2.1 of the specification.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">true</Attribute>
+				</Item>
+			</BrowseElement>
+			<BrowseElement ElementName="Aggregate Data 2">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">The sample dataset defined in Section 2.9.2.2 of the specification.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+		</Children>
+	</BrowseElement>
+	<BrowseElement ElementName="Static Data">
+		<Children>
+			<BrowseElement ElementName="Ramp [15 min]">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">A periodic linear ramp.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Derive Equation" xsi:type="xsd:string">1[15]</Attribute>
+					<Attribute Name="Normal Maximum" xsi:type="xsd:double">+500</Attribute>
+					<Attribute Name="Normal Minimum" xsi:type="xsd:double">-500</Attribute>
+					<Attribute Name="Max Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Min Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+			<BrowseElement ElementName="Square [15 min]">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">A periodic square wave.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Derive Equation" xsi:type="xsd:string">3[15]</Attribute>
+					<Attribute Name="Normal Maximum" xsi:type="xsd:double">+500</Attribute>
+					<Attribute Name="Normal Minimum" xsi:type="xsd:double">-500</Attribute>
+					<Attribute Name="Max Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Min Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+			<BrowseElement ElementName="Sine [15 min]">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">A periodic sine wave.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Derive Equation" xsi:type="xsd:string">3[15]</Attribute>
+					<Attribute Name="Normal Maximum" xsi:type="xsd:double">+500</Attribute>
+					<Attribute Name="Normal Minimum" xsi:type="xsd:double">-500</Attribute>
+					<Attribute Name="Max Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Min Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+		</Children>
+	</BrowseElement>
+	<BrowseElement ElementName="Dynamic Data">
+		<Children>
+			<BrowseElement ElementName="Ramp [15 sec]">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">A periodic linear ramp.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">true</Attribute>
+					<Attribute Name="Derive Equation" xsi:type="xsd:string">1[15]</Attribute>
+					<Attribute Name="Normal Maximum" xsi:type="xsd:double">+500</Attribute>
+					<Attribute Name="Normal Minimum" xsi:type="xsd:double">-500</Attribute>
+					<Attribute Name="Max Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Min Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+			<BrowseElement ElementName="Square [15 sec]">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">A periodic square wave.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">true</Attribute>
+					<Attribute Name="Derive Equation" xsi:type="xsd:string">2[15]</Attribute>
+					<Attribute Name="Normal Maximum" xsi:type="xsd:double">+500</Attribute>
+					<Attribute Name="Normal Minimum" xsi:type="xsd:double">-500</Attribute>
+					<Attribute Name="Max Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Min Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+			<BrowseElement ElementName="Sine [15 sec]">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">A periodic sine wave.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">true</Attribute>
+					<Attribute Name="Derive Equation" xsi:type="xsd:string">3[15]</Attribute>
+					<Attribute Name="Normal Maximum" xsi:type="xsd:double">+500</Attribute>
+					<Attribute Name="Normal Minimum" xsi:type="xsd:double">-500</Attribute>
+					<Attribute Name="Max Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Min Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+			<BrowseElement ElementName="Ramp [30 sec]">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">A periodic linear ramp.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">true</Attribute>
+					<Attribute Name="Derive Equation" xsi:type="xsd:string">1[30]</Attribute>
+					<Attribute Name="Normal Maximum" xsi:type="xsd:double">1000</Attribute>
+					<Attribute Name="Normal Minimum" xsi:type="xsd:double">0</Attribute>
+					<Attribute Name="Max Time Interval" xsi:type="xsd:long">10000000</Attribute>
+					<Attribute Name="Min Time Interval" xsi:type="xsd:long">10000000</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+			<BrowseElement ElementName="Square [30 sec]">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">A periodic square wave.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">true</Attribute>
+					<Attribute Name="Derive Equation" xsi:type="xsd:string">2[30]</Attribute>
+					<Attribute Name="Normal Maximum" xsi:type="xsd:double">1000</Attribute>
+					<Attribute Name="Normal Minimum" xsi:type="xsd:double">0</Attribute>
+					<Attribute Name="Max Time Interval" xsi:type="xsd:long">10000000</Attribute>
+					<Attribute Name="Min Time Interval" xsi:type="xsd:long">10000000</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+			<BrowseElement ElementName="Sine [30 sec]">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">A periodic sine wave.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">true</Attribute>
+					<Attribute Name="Derive Equation" xsi:type="xsd:string">3[30]</Attribute>
+					<Attribute Name="Normal Maximum" xsi:type="xsd:double">1000</Attribute>
+					<Attribute Name="Normal Minimum" xsi:type="xsd:double">0</Attribute>
+					<Attribute Name="Max Time Interval" xsi:type="xsd:long">10000000</Attribute>
+					<Attribute Name="Min Time Interval" xsi:type="xsd:long">10000000</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+			<BrowseElement ElementName="Ramp [50 sec]">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">A periodic linear ramp.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">true</Attribute>
+					<Attribute Name="Derive Equation" xsi:type="xsd:string">1[50]</Attribute>
+					<Attribute Name="Normal Maximum" xsi:type="xsd:double">800</Attribute>
+					<Attribute Name="Normal Minimum" xsi:type="xsd:double">-200</Attribute>
+					<Attribute Name="Max Time Interval" xsi:type="xsd:long">12500000</Attribute>
+					<Attribute Name="Min Time Interval" xsi:type="xsd:long">12500000</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+			<BrowseElement ElementName="Square [50 sec]">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">A periodic square wave.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">true</Attribute>
+					<Attribute Name="Derive Equation" xsi:type="xsd:string">2[50]</Attribute>
+					<Attribute Name="Normal Maximum" xsi:type="xsd:double">800</Attribute>
+					<Attribute Name="Normal Minimum" xsi:type="xsd:double">-200</Attribute>
+					<Attribute Name="Max Time Interval" xsi:type="xsd:long">12500000</Attribute>
+					<Attribute Name="Min Time Interval" xsi:type="xsd:long">12500000</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+			<BrowseElement ElementName="Sine [50 sec]">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">A periodic sine wave.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">true</Attribute>
+					<Attribute Name="Derive Equation" xsi:type="xsd:string">3[50]</Attribute>
+					<Attribute Name="Normal Maximum" xsi:type="xsd:double">800</Attribute>
+					<Attribute Name="Normal Minimum" xsi:type="xsd:double">-200</Attribute>
+					<Attribute Name="Max Time Interval" xsi:type="xsd:long">12500000</Attribute>
+					<Attribute Name="Min Time Interval" xsi:type="xsd:long">12500000</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+		</Children>
+	</BrowseElement>
+	<BrowseElement ElementName="CTT Test Data">
+		<Children>
+			<BrowseElement ElementName="Ramp [15 min UTC]">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">A periodic linear ramp.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Derive Equation" xsi:type="xsd:string">1[15]</Attribute>
+					<Attribute Name="Normal Maximum" xsi:type="xsd:double">+500</Attribute>
+					<Attribute Name="Normal Minimum" xsi:type="xsd:double">-500</Attribute>
+					<Attribute Name="Max Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Min Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+			<BrowseElement ElementName="Square [15 min UTC]">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">A periodic square wave.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Derive Equation" xsi:type="xsd:string">3[15]</Attribute>
+					<Attribute Name="Normal Maximum" xsi:type="xsd:double">+500</Attribute>
+					<Attribute Name="Normal Minimum" xsi:type="xsd:double">-500</Attribute>
+					<Attribute Name="Max Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Min Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+			<BrowseElement ElementName="Sine [15 min UTC]">
+				<Item>
+					<Attribute Name="Description" xsi:type="xsd:string">A periodic sine wave.</Attribute>
+					<Attribute Name="Stepped" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Archiving" xsi:type="xsd:boolean">false</Attribute>
+					<Attribute Name="Derive Equation" xsi:type="xsd:string">3[15]</Attribute>
+					<Attribute Name="Normal Maximum" xsi:type="xsd:double">+500</Attribute>
+					<Attribute Name="Normal Minimum" xsi:type="xsd:double">-500</Attribute>
+					<Attribute Name="Max Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Min Time Interval" xsi:type="xsd:long">7000000</Attribute>
+					<Attribute Name="Uncertain Values" xsi:type="xsd:boolean">false</Attribute>
+				</Item>
+			</BrowseElement>
+		</Children>
+	</BrowseElement>
+</Server>

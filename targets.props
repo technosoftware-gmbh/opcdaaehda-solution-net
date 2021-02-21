@@ -1,0 +1,9 @@
+<Project>
+      <PropertyGroup>
+        <AppTargetFrameworks>net462;netcoreapp3.1;net5.0-windows</AppTargetFrameworks>
+        <AppTargetFramework>net5.0-windows</AppTargetFramework>
+        <TestsTargetFrameworks>net5.0-windows</TestsTargetFrameworks>
+        <LibTargetFrameworks>net462;net472;net48;netstandard2.1;net5.0-windows</LibTargetFrameworks>
+        <LibxTargetFrameworks>net462;net472;net48;netstandard2.1;net5.0-windows</LibxTargetFrameworks>
+      </PropertyGroup>
+</Project>

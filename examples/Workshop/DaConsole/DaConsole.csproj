@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>$(AppTargetFrameworks)</TargetFrameworks>
+    <LangVersion>7.3</LangVersion>
+    <AssemblyName>Technosoftware.DaClientConsole</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>Technosoftware.DaClientConsole</PackageId>
+    <Company>Technosoftware GmbH</Company>
+    <Product>OPC DA/AE/HDA Client Solution .NET</Product>
+    <Description>Technosoftware DA Client Console</Description>
+    <Copyright>Copyright © 2011 - 2021 Technosoftware GmbH</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Technosoftware.DaAeHdaSolution.DaAeHdaClient" Version="1.2.*" />
+  </ItemGroup>
+
+</Project>
