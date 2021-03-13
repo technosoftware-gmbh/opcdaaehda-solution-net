@@ -2,7 +2,12 @@
 ## OPC DA/AE/HDA Client Solution .NET - 1.2.0
 
 ###	Changes
-- Automatic build of NuGet packages
+- NuGet packages are now available under a commercial license
+
+### Fixed Issues
+- Fix Connect method(). It ended correctly even if connection is not established
+- Disconnect() method is not executed correctly because of wrong implemented Dispose() methods.
+
 
 -------------------------------------------------------------------------------------------------------------
 ## OPC DA/AE/HDA Client Solution .NET - 1.1.1

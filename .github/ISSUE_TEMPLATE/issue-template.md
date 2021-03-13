@@ -38,10 +38,10 @@ If applicable, add a code snippet to help explain your issue.
  - OS: [e.g. Windows 10, Ubuntu, macOS]
  - Development environment: [e.g. Visual Studio 2019 16.7.2]
  - Runtime: [e.g. .NET 5.0, .NET Core 3.1]
- - NuGet Package Release Version [e.g. 2.2.0.10]
- - Component: [e.g. Technosoftware.UaSolution.UaServer]
- - Server: [e.g. SampleServer]
- - Client: [e.g. SampleClient]
+ - NuGet Package Release Version [e.g. 1.2.0.8]
+ - Component: [e.g. Technosoftware.DaAeHdaSolution.DaAeHdaClient]
+ - Server: [e.g. OpcDaAeServer.exe]
+ - Client: [e.g. DaConsole]
 
 **Additional context**
 Add any other context about the problem here.
